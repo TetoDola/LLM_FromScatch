@@ -305,7 +305,7 @@ for epoch in range(num_epochs):
             ckpt_path = f"checkpoint_step_{step}.pth"
             print(f"Saving checkpoint to {ckpt_path}...")
             torch.save(model.state_dict(), ckpt_path)
-# Final Evaluation
+# Final Evaluatio
 val_loss, val_ppl = evaluate(model, val_loader)
 print(f"Final Validation Loss: {val_loss:.4f}, Perplexity: {val_ppl:.2f}")
 
